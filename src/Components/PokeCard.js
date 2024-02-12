@@ -1,11 +1,13 @@
 import React from 'react'
-
+import styles from './styles.css'
 function PokeCard(props) {
   return (
-    <div>
+
+    
+    <div className='card'>
         <p>{props.name}</p>
-        <p>{props.height}</p>
-        <p>{props.url}</p>
+        
+        <img src={props.url} alt=""></img>
     </div>
   )
 }
