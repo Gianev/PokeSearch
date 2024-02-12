@@ -15,7 +15,7 @@ function App() {
   }
   useEffect(() => {
     const fetchData = async () => {
-    const response = await fetch(URL)
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
     response.json().then(json => {
       setData(json)
       console.log(json)
@@ -33,9 +33,11 @@ function App() {
       </form>
       </div> 
 
-      <PokeCard name={pokemon} 
-      height={data.height}
-      url={data.sprite}
+      
+      <PokeCard 
+      
+      name={pokemon} 
+      url={data.sprites?.front_default}
       
       ></PokeCard> 
 
