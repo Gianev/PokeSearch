@@ -11,7 +11,7 @@ function App() {
 
   const handleSubmit= (e) => {
     e.preventDefault()
-    setPokemon(search)
+    setPokemon(search.toLowerCase())
   }
   useEffect(() => {
     const fetchData = async () => {
@@ -33,12 +33,12 @@ function App() {
       </form>
       </div> 
 
-      
+     
       <PokeCard 
       
       name={pokemon} 
       url={data.sprites?.front_default}
-      
+      attack={data.attack}
       ></PokeCard> 
 
     </div>
