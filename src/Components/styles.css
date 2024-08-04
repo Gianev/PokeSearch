@@ -30,7 +30,8 @@
 
 
 .card{
-    max-width: 900px;
+    height: 400px;
+    width: 400px;
     background-color: rgb(255, 255, 255);
     border: 2px solid black;
     box-shadow: 0 40px 40px rgba(0, 0, 0, 0.1); /* Shadow with a slight transparency */
@@ -42,4 +43,9 @@
     align-items: center;
     flex-direction: column;
      border-radius: 25px;
+}
+
+.card img{
+    height: 300px;
+    width: 300px;
 }

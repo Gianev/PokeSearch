@@ -6,7 +6,7 @@ function PokeCard(props) {
     
     <div className='card'>
         <p>{props.name}</p>
-        
+        <p></p>
         <img src={props.url} alt=""></img>
     </div>
   )
